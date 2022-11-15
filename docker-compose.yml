@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  httpd:
+    image: httpd
+    container_name: meu-app-apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./website:/usr/local/apache2/htdocs
